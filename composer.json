@@ -1,0 +1,44 @@
+{
+    "name": "pravaler/monolog-gcloud-decorator",
+    "description": "Decorates monolog json formatter towards gcloud compatibility",
+    "keywords": [
+        "monolog", "logging", "gcloud", "google"
+    ],    
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/PRAVALER/monolog-gcloud-decorator",
+    "authors": [{
+        "name": "rafanoronha",
+        "email": "rafanoronha@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.3.0",
+        "monolog/monolog": ">=1.25.1",
+        "ext-ctype": "*"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "doctrine/annotations": "^1.2",
+        "phpcompatibility/php-compatibility": "^9.3.5",
+        "roave/security-advisories": "dev-latest",
+        "squizlabs/php_codesniffer": "^3.5.6",
+        "yoast/phpunit-polyfills": "^0.2.0"
+    },    
+    "support": {
+        "issues": "https://github.com/PRAVALER/monolog-gcloud-decorator/issues",
+        "source": "https://github.com/PRAVALER/monolog-gcloud-decorator"
+    },    
+    "autoload": {
+        "psr-4": {
+            "Pravaler\\MonologGCloudDecorator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pravaler\\MonologGCloudDecorator\\Test\\": "test/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    }
+}
